@@ -1,0 +1,129 @@
+body
+{
+	background-color: #FB9E3E;
+	color: black;
+	background-image: url("img/background.jpg");
+}
+#container
+{
+width: 1000px;
+margin-left: auto;
+margin-right: auto;	
+font-family: 'Oswald', sans-serif;
+}
+#logo
+{
+color: white;
+margin-top: 20px;
+font-size: 50px;
+letter-spacing: 2px;
+font-weight: 900px;
+position:center;
+}
+#menu
+{
+width: 934px;
+background-color: 	blue;
+margin-top: 15px;
+padding: 10px;
+color: white;
+}
+#topbar
+{
+background-color: white;	
+padding: 10px;
+margin-top: 20px;
+margin-bottom: 20px;
+height: 160px;
+}
+#topbarL
+{
+float: left;	
+padding: 20px;
+width: 200px;
+text-align: center;
+border-right:  2px dotted black;
+
+}
+#topbarR
+{
+float: left;		
+padding: 20px;
+width: 300px;
+font-size: 17px;
+
+}
+#sidebar
+{
+float: left;
+width: 150px;
+height:620px;
+background-color: blue;
+text-align: center;
+font-size: 18px ;
+border-right: 2px dotted black;
+border-left:  2px dotted black;
+border-top:  2px dotted black;
+border-bottom:  2px dotted black;
+padding-top: 20px;
+}
+#content
+{
+float: left;	
+padding: 40px;
+width: 720px;
+background-color: black;
+min-height: 564px;
+color: white;
+font-size: 15px;
+}
+#footer
+{
+clear: both;	
+color:white;
+text-align: center;
+padding: 20px;
+font-size: 18px;
+}
+.option
+{
+	float: left;
+	min-width:50px;
+	height: 25px;
+	font-size: 18px;
+	padding: 10px;
+	opacity: 0.8;
+	
+}
+.option:hover
+{
+	color: white;
+	cursor: pointer;
+}
+.optionL
+{
+font-size: 18px;
+height: 25px;
+padding: 10px;
+border-bottom: 1px solid #F9FB02;
+border-top: 1px solid #F9FB02;
+}
+.optionL:hover
+{
+	color: white;
+	cursor: pointer;
+}
+.bigtitle
+{
+font-size: 32px;
+font-weight: 900px;
+letterspacing: 2px;	
+}
+td 
+{ 
+border: 1px solid black; 
+}
+ul
+{
+	font-size: 20px;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<html lang="pl"> <!-- jezyk strony pl -->
+	<meta charset="utf-8" /> <!-- sposób kodowania znaków -->
+	<title>Systemy liczbowe</title> <!-- tytuł strony pokazujacy się na karcie oraz wyszukiwarce -->
+	<meta name="description" content="Społecznosc fanów wowa w internecie" /> <!-- zawartośc opisu w przglądarce -->
+	<meta name="keywords" content="gry, mmo, teso, pradawne zwoje, społeczność"/> <!-- słowa kluczowe do wyszukiwania strony w google -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/> <!-- możliwość pokazania strony w przeglądarkach IE (microsoft) -->
+	<meta name="author" content="Krzysztof Łyczak"/> <!-- imie i nazwisko autora (niepotrzebne) -->
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&amp;subset=latin-ext" rel="stylesheet">
+	
+</head>
+<body>
+<div id="container">
+<div id="logo" >
+Poznaj Jak Liczby Dzialaja w Informatyce
+</div>
+<div id="menu">
+<div class="option"><a href="index.html">Reprezentacja liczb</a></div> 
+<div class="option"><a href="historia.html">Liczby naturalne</a></div> 
+<div class="option"><a href="jakzaczac.html">Liczby calkowiete</a></div> 
+<div class="option"><a href="expienie.html">Zamiana Systemow</a></div>
+<div class="option"> <a href="zarabianiegolda.html">Autorzy</a></div>
+<div style="clear:both"></div>
+</div>
+
+
+
+
+
+<div id ="sidebar">
+<div class="optionL"><a href="index.html">Reprezentacja liczb<</a></div> 
+<div class="optionL"><a href="historia.html">Liczby naturalne</a></div> 
+<div class="optionL"><a href="jakzaczac.html">Liczby calkowiete<</a></div> 
+<div class="optionL"><a href="expienie.html">Zamiana Systemow</a></div>
+<div class="optionL"> <a href="zarabianiegolda.html">Autorzy</a></div>
+<script language="javascript">
+<!--W3e JAVAscript Preset
+var timerID = null;
+var timerRunning = false;
+function stopclock()
+{
+    if(timerRunning)
+        clearTimeout(timerID)
+    timerRunning = false;
+}
+
+function startclock()
+{
+    stopclock();
+    showtime();
+}
+
+function showtime()
+{
+    var now = new Date();
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+    var timeValue = "" + ((hours > 12) ? hours - 12 : hours);
+    timeValue  += ((minutes < 10) ? ":0" : ":") + minutes;
+    timeValue  += ((seconds < 10) ? ":0" : ":") + seconds;
+    timeValue  += (hours >= 12) ? " P.M." : " A.M.";
+    document.clock.face.value = timeValue;
+    timerID = setTimeout("showtime()",1000);
+    timerRunning = true;
+}
+//-->
+</script>
+
+<form name="clock" onSubmit="0">
+  <input type="text" name="face" size="24">
+</form>
+
+<script>startclock();</script>
+
+<div style="clear:both"></div>
+</div>
+<div id="content">
+<span class="bigtitle">
+Przedstawianie liczby całkowitej</span></br>
+Liczba całkowita to liczba bez ułamka, która może być ujemna. Liczba ta musi zatem być tak zakodowana, żeby możliwe było stwierdzenie, czy jest dodatnia, czy ujemna, a także by można było przestrzegać reguł dodawania. Sztuczka polega na metodzie kodowania zwanej kodem uzupełnień do dwóch.
+</br>
+    Dodatnia liczba całkowita lub zero będzie przedstawiona binarnie (baza 2) jako liczba naturalna, z tym że najstarszy bit (najbardziej z lewej) oznacza plus lub minus. Zatem dla dodatniej liczby całkowitej lub zera bit ten musi być ustawiony na 0 (co odpowiada plusowi; 1 oznacza minus). W ten sposób, jeśli liczba naturalna zostanie zakodowana przy użyciu 4 bitów, najwyższą możliwą liczbą będzie 0111 (lub 7 w stopniach dziesiętnych).
+</br>
+Z reguły najwyższą dodatnią liczbą całkowitą przy liczbie bitówn będzie 2n-1-1.
+</br>
+    Ujemna liczba całkowita jest kodowana przy użyciu kodu uzupełnień do dwóch. 
+</br>
+</br>
+Zasada kodu uzupełnień do dwóch:
+</br>
+    Wybierz liczbę ujemną.</br>
+    Weź jej wartość absolutną (jej równoważną wartość dodatnią).</br>
+    Jest przedstawiona w bazie 2 przy użyciu n bitów-1.</br>
+    Każdy bit zostaje zamieniony ze swoim uzupełnieniem (tzn. zera zastępowane jedynkami i na odwrót).</br>
+    Dodaj 1: zwróć uwagę, że poprzez dodanie liczby i jej uzupełnienia do dwóch uzyskujemy wynik 0. Zobaczmy to na przykładzie: </br>
+	</br>
+Chcemy zakodować wartość -5 przy użyciu 8 bitów. Aby to zrobić:</br>
+
+
+    zapisz 5 binarnie: 00000101.</br>
+    zamień to na uzupełnienie: 11111010.</br>
+    dodaj 1: 11111011.</br>
+    8-bitowa binarna prezentacja -5 to 11111011.</br>
+
+</br>
+W razie problemow prosze wysylac zgloszenia na nasz adres mailowy:
+<a href="mailto:wow.pl">wow@wp.pl</a>
+lub odwiedzic 
+<a href="https://www.facebook.com/WoWCinematics/">facebooka</a>
+</div>
+<div id="footer">
+Poznaj lepiej świat Poznaj lepiej swiat komputerow od 2004 r. &copy; Wszelkie prawa zastrzeżone 
+<script>
+<!--
+function doit(){
+if (!window.print){
+alert("Musisz mieć NS4.x lub IE5,\naby użyć przycisku drukowania!")
+return
+}
+window.print()
+}
+//-->
+</script>
+<a href="javascript:doit()"><img src="img/print.gif" border=0 width="20" height="20"></a>
+</div>
+</div>
+</body> 
+</html>
